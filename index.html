@@ -3,20 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Mi Proyecto Web</title>
-
-    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <h1>Bienvenido a mi Página Web!</h1>
-
+    <h1>Bienvenido a mi Página Web..!</h1>
     <p>Este proyecto fue publicado usando GitHub.</p>
 
     <p>Ingrese su nombre:</p>
-    <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+    <input type="text" id="nombre" placeholder="Escribe tu nombre" oninput="contarCaracteres()" maxlength="30"/>
+    <p id="contador_nombre">0/30 caracteres</p>
 
+    <p>Ingrese su apellido:</p>
+    <input type="text" id="apellido" placeholder="Escribe tu apellido" oninput="contarCaracteres()" maxlength="30" />
+    <p id="contador_apellido">0/30 caracteres</p>
+
+    <br/>
     <button onclick="saludar()">Saludar</button>
+    <button onclick="limpiar()">Limpiar</button>
 
     <h2>Formulario de contacto</h2>
     <input type="email" id="correo" placeholder="Ingrese su correo">
@@ -24,8 +27,6 @@
     <p id="mensajeCorreo"></p>
 
     <p id="resultado"></p>
-
-    <!-- Enlace al archivo JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>

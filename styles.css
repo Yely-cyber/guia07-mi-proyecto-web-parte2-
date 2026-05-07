@@ -41,3 +41,13 @@ button {
 }
 
 button:hover { background-color: #2980b9; }
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.exito {
+    color: green;
+    font-weight: bold;
+}

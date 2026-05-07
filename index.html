@@ -8,25 +8,27 @@
   <body>
     <h1>Bienvenido a mi Página Web..!</h1>
     <p>Este proyecto fue publicado usando GitHub.</p>
+    <div class="card">
 
-    <p>Ingrese su nombre:</p>
-    <input type="text" id="nombre" placeholder="Escribe tu nombre" oninput="contarCaracteres()" maxlength="30"/>
-    <p id="contador_nombre">0/30 caracteres</p>
+        <p>Ingrese su nombre:</p>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" oninput="contarCaracteres()" maxlength="30"/>
+        <p id="contador_nombre">0/30 caracteres</p>
 
-    <p>Ingrese su apellido:</p>
-    <input type="text" id="apellido" placeholder="Escribe tu apellido" oninput="contarCaracteres()" maxlength="30" />
-    <p id="contador_apellido">0/30 caracteres</p>
+        <p>Ingrese su apellido:</p>
+        <input type="text" id="apellido" placeholder="Escribe tu apellido" oninput="contarCaracteres()" maxlength="30" />
+        <p id="contador_apellido">0/30 caracteres</p>
 
-    <br/>
-    <button onclick="saludar()">Saludar</button>
-    <button onclick="limpiar()">Limpiar</button>
+        <br/>
+        <button onclick="saludar()">Saludar</button>
+        <button onclick="limpiar()">Limpiar</button>
+        
+        <h2>Formulario de contacto</h2>
+        <input type="email" id="correo" placeholder="Ingrese su correo">
+        <button onclick="validarCorreo()">Validar correo</button>
+        <p id="mensajeCorreo"></p>
 
-    <h2>Formulario de contacto</h2>
-    <input type="email" id="correo" placeholder="Ingrese su correo">
-    <button onclick="validarCorreo()">Validar correo</button>
-    <p id="mensajeCorreo"></p>
-
-    <p id="resultado"></p>
+        <p id="resultado"></p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
